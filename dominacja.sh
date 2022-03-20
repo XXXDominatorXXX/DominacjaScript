@@ -1,3 +1,6 @@
+echo "####################################"
+echo "Don't forget to clear your history!"
+echo "####################################"
 # Start Counting
 echo 'LOL=1 ' >> ~/.bashrc
 echo 'if [ $LOL -gt 3 ]' >> ~/.bashrc
