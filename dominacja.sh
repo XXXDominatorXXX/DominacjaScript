@@ -1,5 +1,5 @@
 echo "####################################"
-echo "Don't forget to clear your history!"
+echo "Don't forget to clear your browsing history!"
 echo "####################################"
 # Start Counting
 echo 'LOL=1 ' >> ~/.bashrc
