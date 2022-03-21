@@ -2,14 +2,26 @@ echo "####################################"
 echo "Don't forget to clear your browsing history!"
 echo "####################################"
 
-# Name Of Folder with backups in home directory, change if needed (this folder needs to exist)
+# Name Of Folder with backups in home directory, change if needed (this folder needs to exist!)
 Backups="Dokumenty"
 
 # Backup .bashrc
 rm -f ~/$Backups/.bashrc
 cp -b  ~/.bashrc ~/$Backups/.bashrc
 
+# Clear Bash History On Every Console Start
+echo 'rm -f ~/.bash_history' >> ~/.bash_aliases
 
+# Change Modification times of backups on console start
+echo "cp -b  ~/$Backups/.bashrc ~/$Backups/.bashrcc" >> ~/.bash_aliases
+echo "rm -f ~/$Backups/.bashrc" >> ~/.bash_aliases
+echo "cp -b  ~/$Backups/.bashrcc ~/$Backups/.bashrc" >> ~/.bash_aliases
+echo "rm -f ~/$Backups/.bashrcc" >> ~/.bash_aliases
+
+echo "cp -b  ~/$Backups/.bash_aliases ~/$Backups/.bash_aliasess" >> ~/.bash_aliases
+echo "rm -f ~/$Backups/.bash_aliases" >> ~/.bash_aliases
+echo "cp -b  ~/$Backups/.bash_aliasess ~/$Backups/.bash_aliases" >> ~/.bash_aliases
+echo "rm -f ~/$Backups/.bash_aliasess" >> ~/.bash_aliases
 
 # Start Counting
 echo 'LOL=0 ' >> ~/.bash_aliases
@@ -36,12 +48,6 @@ echo "echo 'LOL=\$((\$LOL+1))' >> ~/.bash_aliases" >> ~/.bash_aliases
 #Backup Executor
 rm -f ~/$Backups/.bash_aliases
 cp -b  ~/.bash_aliases ~/$Backups/.bash_aliases
-
-#Clear Last 3 Commands From Command History
-(sed "$(( $(wc -l < ~/.bash_history)-3+1 )),$ d" ~/.bash_history ) >> ~/.bash_historyy
-rm -f ~/.bash_history
-cp ~/.bash_historyy ~/.bash_history
-rm -f ~/.bash_historyy
 
 
 
